@@ -1,97 +1,79 @@
-* {
-	box-sizing: border-box;
-	font-family: sans;
+* { box-sizing: border-box; }
+ 
+ body {
+ 	font-family: arial;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	font-size: 1.75rem;
+ }
+ .title {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	border: 1px solid black;
+ 	font-size: 1.25rem;
+ }
+
+ #section1, #section2, #section3 {
+ 	
+ 	padding: 12px;
+
+ }
+
+ #section1 .content, #section2 .content, #section3 .content {
+ 	font-size: 1rem;
+ 	background-color: pink; 
+ 	position: relative;
+ 	border:1px solid black;
+ 	padding-top: 12px;
+
+
+ }
+ 
+#section1 .title {
+	background-color: red ;
+
 }
 
-.content {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-	margin-top: 2.5em;
-	margin-bottom: 0.5em;
-	
+#section2 .title {
+	background-color: yellow;
 }
 
-.colors_1 {
-	color: black;
-	background-color: lime;
-}
-
-.colors_2 {
-	color: white;
-	background-color: maroon;
-}
-
-.colors_3 {
-	color: black;
+#section3 .title {
 	background-color: green;
 }
 
-.h_topright {
-	position: absolute;
-	border: 1px solid black;
-	top: -1px;
-	right: -1px;
-	width: 33.33%;
-	text-align: center;
-	font-size: 125%;
-	font-weight: bold;
-}
-
-.c_all {
-	border: 1px solid black;
-	position: relative;
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-top: 1%;
-	margin-bottom: 1%;
-}
-
-.page_head {
-	text-align: center;
-	font-size: 175%;
-}
-
+/* desktop  */
 @media (min-width: 992px) {
-	.d_small_sec {
-		float: left;
-		width: 31%;
-		background-color: lightgray;
-		
-	}
-	
-	.d_big_sec {
-		float: left;
-		width: 31%;
-		background-color: lightgray;
-	}
-	
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 33%;
+	} 
 }
 
+/*tablet*/
+@media (min-width:768px) and (max-width: 991px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+	} 
 
-@media (max-width: 991px) and (min-width: 768px) {
-	.t_small_sec {
-		float: left;
-		width: 50%;
-		background-color: lightgray;
+	#section1, #section2 {
+		width: 49.7%;
 	}
-	
-	.t_big_sec {
-		float: left;
-		width: 98%;
-		background-color: lightgray;
+
+	#section3 {
+		width: 100%;
 	}
+
 }
 
+/*mobile*/
 @media (max-width: 767px) {
-	.m_small_sec {
-		float: left;
-		width: 98%;
-		background-color: lightgray;
-	}
-	
-	.m_big_sec {
-		float: left;
-		width: 98%;
-		background-color: lightgray;
-	}
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 100%;
+	} 
+
 }
