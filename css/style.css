@@ -6,48 +6,48 @@
 
  h1 {
  	text-align: center;
- 	font-size: 1.75rem;
+ 	font-size: 175%;
  }
  .title {
  	position: absolute;
  	top: 0;
  	right: 0;
+ 	padding-right: 10px;
+ 	padding-left: 10px;
  	border: 1px solid black;
- 	font-size: 1.25rem;
+ 	font-size: 125%;
  }
 
- #section1, #section2, #section3 {
- 	
- 	padding: 12px;
-
+ #block1, #block2, #block3 {	
+ 	padding: 10px;
  }
 
- #section1 .content, #section2 .content, #section3 .content {
+ #block1 .content, #block2 .content, #block3 .content {
  	font-size: 1rem;
- 	background-color: pink; 
+ 	background-color: #009977;
  	position: relative;
- 	border:1px solid black;
- 	padding-top: 12px;
+ 	border:2px solid black;
+ 	padding: 10px;
 
 
  }
  
-#section1 .title {
-	background-color: red ;
+#block1 .title {
+	background-color: pink;
 
 }
 
-#section2 .title {
+#block2 .title {
+	background-color: red;
+}
+
+#block3 .title {
 	background-color: yellow;
-}
-
-#section3 .title {
-	background-color: green;
 }
 
 /* desktop  */
 @media (min-width: 992px) {
-	#section1, #section2, #section3 {
+	#block1, #block2, #block3 {
 		display: inline-block;
 		width: 33%;
 	} 
@@ -55,15 +55,15 @@
 
 /*tablet*/
 @media (min-width:768px) and (max-width: 991px) {
-	#section1, #section2, #section3 {
+	#block1, #block2, #block3 {
 		display: inline-block;
 	} 
 
-	#section1, #section2 {
-		width: 49.7%;
+	#block1, #block2 {
+		width: 49.5%;
 	}
 
-	#section3 {
+	#block3 {
 		width: 100%;
 	}
 
@@ -71,7 +71,7 @@
 
 /*mobile*/
 @media (max-width: 767px) {
-	#section1, #section2, #section3 {
+	#block1, #block2, #block3 {
 		display: inline-block;
 		width: 100%;
 	} 
